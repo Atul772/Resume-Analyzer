@@ -1,0 +1,22 @@
+Machine Learning Engineer
+
+Company: AI Innovations Lab
+
+Job Description:
+We are looking for a Machine Learning Engineer to design, develop, and deploy machine learning models into production. You will collaborate with data scientists and software engineers to build scalable ML solutions.
+
+Responsibilities:
+- Design and implement machine learning algorithms and models
+- Deploy and monitor models in production environments
+- Build and maintain data pipelines and infrastructure
+- Optimize model performance and scalability
+- Collaborate with cross-functional teams
+- Document processes and results
+
+Requirements:
+- Bachelor's or Master's degree in Computer Science, Engineering, or related field
+- Proficiency in Python and ML frameworks (TensorFlow, PyTorch, Scikit-learn)
+- Experience with cloud platforms (AWS, GCP, Azure)
+- Knowledge of MLOps and model deployment
+- Strong programming and problem-solving skills
+- Familiarity with containerization (Docker, Kubernetes)

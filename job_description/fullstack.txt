@@ -1,0 +1,23 @@
+Full Stack Developer
+
+Company: Innovatech Solutions
+
+Job Description:
+We are looking for a skilled Full Stack Developer to build and maintain web applications from front-end to back-end. You will work closely with designers and other developers to deliver seamless user experiences and robust server-side logic.
+
+Responsibilities:
+- Develop and maintain both client-side and server-side components
+- Design and implement APIs and web services
+- Collaborate with UI/UX designers to create responsive interfaces
+- Optimize applications for speed and scalability
+- Write clean, well-documented code
+- Troubleshoot and debug issues across the stack
+
+Requirements:
+- Bachelor's degree in Computer Science or related field
+- Proficiency in JavaScript, HTML, CSS, and at least one backend language (Node.js, Python, Java, etc.)
+- Experience with front-end frameworks (React, Angular, Vue)
+- Experience with backend frameworks (Express, Django, Spring)
+- Familiarity with databases (MongoDB, MySQL, PostgreSQL)
+- Understanding of RESTful APIs and web security
+- Strong problem-solving skills and attention to detail

@@ -1,0 +1,23 @@
+Backend Developer
+
+Company: DataDrive Inc.
+
+Job Description:
+We are seeking a Backend Developer to design, build, and maintain the server-side logic and databases for our web applications. You will ensure high performance and responsiveness to requests from the front-end.
+
+Responsibilities:
+- Develop and maintain server-side logic, APIs, and databases
+- Integrate user-facing elements with server-side logic
+- Optimize applications for maximum speed and scalability
+- Implement security and data protection measures
+- Collaborate with front-end developers and other team members
+- Write reusable, testable, and efficient code
+
+Requirements:
+- Bachelor's degree in Computer Science or related field
+- Proficiency in backend languages (Python, Java, Node.js, etc.)
+- Experience with frameworks like Django, Express, or Spring
+- Strong understanding of databases (SQL, NoSQL)
+- Familiarity with RESTful API design
+- Knowledge of version control (Git)
+- Good problem-solving and communication skills

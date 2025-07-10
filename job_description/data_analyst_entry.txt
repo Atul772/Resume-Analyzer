@@ -1,0 +1,20 @@
+Data Analyst (Entry Level)
+
+Company: DataBridge Analytics
+
+Job Description:
+We are seeking a Data Analyst to collect, process, and perform basic analysis on data to support business decisions. This is an entry-level position ideal for recent graduates.
+
+Responsibilities:
+- Collect and clean data from various sources
+- Perform basic data analysis and generate reports
+- Visualize data using charts and dashboards
+- Assist in identifying trends and patterns
+- Present findings to team members
+
+Requirements:
+- Bachelor's degree in Statistics, Mathematics, Computer Science, or related field
+- Proficiency in Excel and basic knowledge of SQL
+- Familiarity with data visualization tools (Power BI, Tableau) is a plus
+- Analytical mindset and attention to detail
+- Good communication skills 

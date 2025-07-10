@@ -15,3 +15,6 @@ env/
 
 # Others
 .DS_Store
+
+# Embeddings
+.embedding_cache/

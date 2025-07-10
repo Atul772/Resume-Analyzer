@@ -1,0 +1,22 @@
+Data Scientist
+
+Company: Insight Analytics
+
+Job Description:
+We are seeking a Data Scientist to analyze large datasets, build predictive models, and generate actionable insights for business decisions. You will work with cross-functional teams to solve complex problems using data-driven approaches.
+
+Responsibilities:
+- Collect, clean, and analyze large datasets
+- Build and validate machine learning models
+- Communicate findings through reports and visualizations
+- Collaborate with engineers and business stakeholders
+- Develop data pipelines and automate data processes
+- Stay updated with the latest data science techniques
+
+Requirements:
+- Bachelor's or Master's degree in Data Science, Computer Science, Statistics, or related field
+- Proficiency in Python, R, or similar languages
+- Experience with machine learning libraries (scikit-learn, TensorFlow, PyTorch)
+- Strong knowledge of statistics and data analysis
+- Familiarity with SQL and data visualization tools
+- Excellent problem-solving and communication skills

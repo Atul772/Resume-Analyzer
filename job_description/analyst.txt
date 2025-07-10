@@ -1,0 +1,21 @@
+Analyst
+
+Company: Business Insights Group
+
+Job Description:
+We are seeking an Analyst to interpret data, analyze results, and provide ongoing reports to support business decisions. You will work with large datasets and present findings to stakeholders.
+
+Responsibilities:
+- Analyze data using statistical techniques
+- Develop and maintain dashboards and reports
+- Identify trends and patterns in complex data sets
+- Work with management to prioritize business needs
+- Prepare presentations and communicate insights
+- Ensure data integrity and quality
+
+Requirements:
+- Bachelor's degree in Business, Economics, Statistics, or related field
+- Proficiency in Excel, SQL, and data visualization tools (Power BI, Tableau)
+- Strong analytical and problem-solving skills
+- Attention to detail and accuracy
+- Good communication and presentation skills

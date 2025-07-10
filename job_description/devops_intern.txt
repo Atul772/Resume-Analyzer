@@ -1,0 +1,19 @@
+DevOps Intern
+
+Company: CloudOps Solutions
+
+Job Description:
+We are seeking a DevOps Intern to assist in automating and streamlining our development and deployment processes. This is a great opportunity to learn about cloud infrastructure and CI/CD pipelines.
+
+Responsibilities:
+- Assist in setting up and maintaining CI/CD pipelines
+- Help automate deployment and monitoring tasks
+- Work with cloud platforms (AWS, Azure, GCP)
+- Collaborate with developers and IT staff
+- Document processes and solutions
+
+Requirements:
+- Bachelor's degree in Computer Science, IT, or related field (or pursuing)
+- Basic understanding of Linux, scripting, and cloud concepts
+- Eagerness to learn DevOps tools and practices
+- Good communication and teamwork skills 

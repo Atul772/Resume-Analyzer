@@ -1,0 +1,19 @@
+Junior Web Developer
+
+Company: WebWorks Digital
+
+Job Description:
+We are looking for a Junior Web Developer to assist in building and maintaining websites and web applications. You will work under the guidance of senior developers and gain hands-on experience in web technologies.
+
+Responsibilities:
+- Assist in developing and maintaining websites
+- Write HTML, CSS, and JavaScript code
+- Test and debug web applications
+- Collaborate with designers and developers
+- Learn and apply new web technologies
+
+Requirements:
+- Bachelor's degree in Computer Science or related field
+- Basic knowledge of HTML, CSS, and JavaScript
+- Eagerness to learn and grow in a team environment
+- Good problem-solving and communication skills 

@@ -1,0 +1,20 @@
+QA Engineer (Entry Level)
+
+Company: QualityFirst Tech
+
+Job Description:
+We are seeking an entry-level QA Engineer to help ensure the quality of our software products. You will be responsible for executing test cases, reporting bugs, and working closely with developers to resolve issues.
+
+Responsibilities:
+- Execute manual and automated test cases
+- Identify, document, and track software defects
+- Collaborate with developers to resolve issues
+- Participate in requirement and design reviews
+- Assist in creating test plans and documentation
+
+Requirements:
+- Bachelor's degree in Computer Science, Engineering, or related field
+- Basic understanding of software testing concepts
+- Familiarity with testing tools is a plus
+- Attention to detail and analytical skills
+- Good communication and teamwork abilities 

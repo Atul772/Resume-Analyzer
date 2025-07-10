@@ -1,0 +1,409 @@
+{
+  "analyst.txt": {
+    "job_title": "Analyst",
+    "company": "Business Insights Group",
+    "description": "We are seeking an Analyst to interpret data, analyze results, and provide ongoing reports to support business decisions. You will work with large datasets and present findings to stakeholders.",
+    "responsibilities": [
+      "Analyze data using statistical techniques",
+      "Develop and maintain dashboards and reports",
+      "Identify trends and patterns in complex data sets",
+      "Work with management to prioritize business needs",
+      "Prepare presentations and communicate insights",
+      "Ensure data integrity and quality"
+    ],
+    "requirements": [
+      "Bachelor's degree in Business, Economics, Statistics, or related field",
+      "Proficiency in Excel, SQL, and data visualization tools (Power BI, Tableau)",
+      "Strong analytical and problem-solving skills",
+      "Attention to detail and accuracy",
+      "Good communication and presentation skills"
+    ],
+    "responsibilities_text": "Analyze data using statistical techniques \u2022 Develop and maintain dashboards and reports \u2022 Identify trends and patterns in complex data sets \u2022 Work with management to prioritize business needs \u2022 Prepare presentations and communicate insights \u2022 Ensure data integrity and quality",
+    "requirements_text": "Bachelor's degree in Business, Economics, Statistics, or related field \u2022 Proficiency in Excel, SQL, and data visualization tools (Power BI, Tableau) \u2022 Strong analytical and problem-solving skills \u2022 Attention to detail and accuracy \u2022 Good communication and presentation skills",
+    "full_text": "Analyst Business Insights Group We are seeking an Analyst to interpret data, analyze results, and provide ongoing reports to support business decisions. You will work with large datasets and present findings to stakeholders.  Analyze data using statistical techniques Develop and maintain dashboards and reports Identify trends and patterns in complex data sets Work with management to prioritize business needs Prepare presentations and communicate insights Ensure data integrity and quality Bachelor's degree in Business, Economics, Statistics, or related field Proficiency in Excel, SQL, and data visualization tools (Power BI, Tableau) Strong analytical and problem-solving skills Attention to detail and accuracy Good communication and presentation skills",
+    "filename": "analyst.txt"
+  },
+  "backend.txt": {
+    "job_title": "Backend",
+    "company": "DataDrive Inc.",
+    "description": "We are seeking a Backend Developer to design, build, and maintain the server-side logic and databases for our web applications. You will ensure high performance and responsiveness to requests from the front-end.",
+    "responsibilities": [
+      "Develop and maintain server-side logic, APIs, and databases",
+      "Integrate user-facing elements with server-side logic",
+      "Optimize applications for maximum speed and scalability",
+      "Implement security and data protection measures",
+      "Collaborate with front-end developers and other team members",
+      "Write reusable, testable, and efficient code"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field",
+      "Proficiency in backend languages (Python, Java, Node.js, etc.)",
+      "Experience with frameworks like Django, Express, or Spring",
+      "Strong understanding of databases (SQL, NoSQL)",
+      "Familiarity with RESTful API design",
+      "Knowledge of version control (Git)",
+      "Good problem-solving and communication skills"
+    ],
+    "responsibilities_text": "Develop and maintain server-side logic, APIs, and databases \u2022 Integrate user-facing elements with server-side logic \u2022 Optimize applications for maximum speed and scalability \u2022 Implement security and data protection measures \u2022 Collaborate with front-end developers and other team members \u2022 Write reusable, testable, and efficient code",
+    "requirements_text": "Bachelor's degree in Computer Science or related field \u2022 Proficiency in backend languages (Python, Java, Node.js, etc.) \u2022 Experience with frameworks like Django, Express, or Spring \u2022 Strong understanding of databases (SQL, NoSQL) \u2022 Familiarity with RESTful API design \u2022 Knowledge of version control (Git) \u2022 Good problem-solving and communication skills",
+    "full_text": "Backend DataDrive Inc. We are seeking a Backend Developer to design, build, and maintain the server-side logic and databases for our web applications. You will ensure high performance and responsiveness to requests from the front-end.  Develop and maintain server-side logic, APIs, and databases Integrate user-facing elements with server-side logic Optimize applications for maximum speed and scalability Implement security and data protection measures Collaborate with front-end developers and other team members Write reusable, testable, and efficient code Bachelor's degree in Computer Science or related field Proficiency in backend languages (Python, Java, Node.js, etc.) Experience with frameworks like Django, Express, or Spring Strong understanding of databases (SQL, NoSQL) Familiarity with RESTful API design Knowledge of version control (Git) Good problem-solving and communication skills",
+    "filename": "backend.txt"
+  },
+  "business_analyst_entry.txt": {
+    "job_title": "Business Analyst Entry",
+    "company": "Visionary Analytics",
+    "description": "We are looking for an entry-level Business Analyst to help analyze business processes, gather requirements, and support project teams in delivering solutions.",
+    "responsibilities": [
+      "Assist in gathering and documenting business requirements",
+      "Analyze data and business processes",
+      "Support project managers and stakeholders",
+      "Prepare reports and presentations",
+      "Participate in meetings and brainstorming sessions"
+    ],
+    "requirements": [
+      "Bachelor's degree in Business, Economics, or related field",
+      "Strong analytical and problem-solving skills",
+      "Proficiency in MS Office (Excel, PowerPoint)",
+      "Good communication and teamwork abilities",
+      "Eagerness to learn and adapt"
+    ],
+    "responsibilities_text": "Assist in gathering and documenting business requirements \u2022 Analyze data and business processes \u2022 Support project managers and stakeholders \u2022 Prepare reports and presentations \u2022 Participate in meetings and brainstorming sessions",
+    "requirements_text": "Bachelor's degree in Business, Economics, or related field \u2022 Strong analytical and problem-solving skills \u2022 Proficiency in MS Office (Excel, PowerPoint) \u2022 Good communication and teamwork abilities \u2022 Eagerness to learn and adapt",
+    "full_text": "Business Analyst Entry Visionary Analytics We are looking for an entry-level Business Analyst to help analyze business processes, gather requirements, and support project teams in delivering solutions.  Assist in gathering and documenting business requirements Analyze data and business processes Support project managers and stakeholders Prepare reports and presentations Participate in meetings and brainstorming sessions Bachelor's degree in Business, Economics, or related field Strong analytical and problem-solving skills Proficiency in MS Office (Excel, PowerPoint) Good communication and teamwork abilities Eagerness to learn and adapt",
+    "filename": "business_analyst_entry.txt"
+  },
+  "data_analyst_entry.txt": {
+    "job_title": "Data Analyst Entry",
+    "company": "DataBridge Analytics",
+    "description": "We are seeking a Data Analyst to collect, process, and perform basic analysis on data to support business decisions. This is an entry-level position ideal for recent graduates.",
+    "responsibilities": [
+      "Collect and clean data from various sources",
+      "Perform basic data analysis and generate reports",
+      "Visualize data using charts and dashboards",
+      "Assist in identifying trends and patterns",
+      "Present findings to team members"
+    ],
+    "requirements": [
+      "Bachelor's degree in Statistics, Mathematics, Computer Science, or related field",
+      "Proficiency in Excel and basic knowledge of SQL",
+      "Familiarity with data visualization tools (Power BI, Tableau) is a plus",
+      "Analytical mindset and attention to detail",
+      "Good communication skills"
+    ],
+    "responsibilities_text": "Collect and clean data from various sources \u2022 Perform basic data analysis and generate reports \u2022 Visualize data using charts and dashboards \u2022 Assist in identifying trends and patterns \u2022 Present findings to team members",
+    "requirements_text": "Bachelor's degree in Statistics, Mathematics, Computer Science, or related field \u2022 Proficiency in Excel and basic knowledge of SQL \u2022 Familiarity with data visualization tools (Power BI, Tableau) is a plus \u2022 Analytical mindset and attention to detail \u2022 Good communication skills",
+    "full_text": "Data Analyst Entry DataBridge Analytics We are seeking a Data Analyst to collect, process, and perform basic analysis on data to support business decisions. This is an entry-level position ideal for recent graduates.  Collect and clean data from various sources Perform basic data analysis and generate reports Visualize data using charts and dashboards Assist in identifying trends and patterns Present findings to team members Bachelor's degree in Statistics, Mathematics, Computer Science, or related field Proficiency in Excel and basic knowledge of SQL Familiarity with data visualization tools (Power BI, Tableau) is a plus Analytical mindset and attention to detail Good communication skills",
+    "filename": "data_analyst_entry.txt"
+  },
+  "data_scientist.txt": {
+    "job_title": "Data Scientist",
+    "company": "Insight Analytics",
+    "description": "We are seeking a Data Scientist to analyze large datasets, build predictive models, and generate actionable insights for business decisions. You will work with cross-functional teams to solve complex problems using data-driven approaches.",
+    "responsibilities": [
+      "Collect, clean, and analyze large datasets",
+      "Build and validate machine learning models",
+      "Communicate findings through reports and visualizations",
+      "Collaborate with engineers and business stakeholders",
+      "Develop data pipelines and automate data processes",
+      "Stay updated with the latest data science techniques"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Data Science, Computer Science, Statistics, or related field",
+      "Proficiency in Python, R, or similar languages",
+      "Experience with machine learning libraries (scikit-learn, TensorFlow, PyTorch)",
+      "Strong knowledge of statistics and data analysis",
+      "Familiarity with SQL and data visualization tools",
+      "Excellent problem-solving and communication skills"
+    ],
+    "responsibilities_text": "Collect, clean, and analyze large datasets \u2022 Build and validate machine learning models \u2022 Communicate findings through reports and visualizations \u2022 Collaborate with engineers and business stakeholders \u2022 Develop data pipelines and automate data processes \u2022 Stay updated with the latest data science techniques",
+    "requirements_text": "Bachelor's or Master's degree in Data Science, Computer Science, Statistics, or related field \u2022 Proficiency in Python, R, or similar languages \u2022 Experience with machine learning libraries (scikit-learn, TensorFlow, PyTorch) \u2022 Strong knowledge of statistics and data analysis \u2022 Familiarity with SQL and data visualization tools \u2022 Excellent problem-solving and communication skills",
+    "full_text": "Data Scientist Insight Analytics We are seeking a Data Scientist to analyze large datasets, build predictive models, and generate actionable insights for business decisions. You will work with cross-functional teams to solve complex problems using data-driven approaches.  Collect, clean, and analyze large datasets Build and validate machine learning models Communicate findings through reports and visualizations Collaborate with engineers and business stakeholders Develop data pipelines and automate data processes Stay updated with the latest data science techniques Bachelor's or Master's degree in Data Science, Computer Science, Statistics, or related field Proficiency in Python, R, or similar languages Experience with machine learning libraries (scikit-learn, TensorFlow, PyTorch) Strong knowledge of statistics and data analysis Familiarity with SQL and data visualization tools Excellent problem-solving and communication skills",
+    "filename": "data_scientist.txt"
+  },
+  "devops_intern.txt": {
+    "job_title": "Devops Intern",
+    "company": "CloudOps Solutions",
+    "description": "We are seeking a DevOps Intern to assist in automating and streamlining our development and deployment processes. This is a great opportunity to learn about cloud infrastructure and CI/CD pipelines.",
+    "responsibilities": [
+      "Assist in setting up and maintaining CI/CD pipelines",
+      "Help automate deployment and monitoring tasks",
+      "Work with cloud platforms (AWS, Azure, GCP)",
+      "Collaborate with developers and IT staff",
+      "Document processes and solutions"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science, IT, or related field (or pursuing)",
+      "Basic understanding of Linux, scripting, and cloud concepts",
+      "Eagerness to learn DevOps tools and practices",
+      "Good communication and teamwork skills"
+    ],
+    "responsibilities_text": "Assist in setting up and maintaining CI/CD pipelines \u2022 Help automate deployment and monitoring tasks \u2022 Work with cloud platforms (AWS, Azure, GCP) \u2022 Collaborate with developers and IT staff \u2022 Document processes and solutions",
+    "requirements_text": "Bachelor's degree in Computer Science, IT, or related field (or pursuing) \u2022 Basic understanding of Linux, scripting, and cloud concepts \u2022 Eagerness to learn DevOps tools and practices \u2022 Good communication and teamwork skills",
+    "full_text": "Devops Intern CloudOps Solutions We are seeking a DevOps Intern to assist in automating and streamlining our development and deployment processes. This is a great opportunity to learn about cloud infrastructure and CI/CD pipelines.  Assist in setting up and maintaining CI/CD pipelines Help automate deployment and monitoring tasks Work with cloud platforms (AWS, Azure, GCP) Collaborate with developers and IT staff Document processes and solutions Bachelor's degree in Computer Science, IT, or related field (or pursuing) Basic understanding of Linux, scripting, and cloud concepts Eagerness to learn DevOps tools and practices Good communication and teamwork skills",
+    "filename": "devops_intern.txt"
+  },
+  "frontend.txt": {
+    "job_title": "Frontend",
+    "company": "PixelWorks Studio",
+    "description": "We are looking for a creative Frontend Developer to implement visual elements and user interactions for our web applications. You will work closely with designers and backend developers to deliver engaging and responsive user experiences.",
+    "responsibilities": [
+      "Develop new user-facing features using modern JavaScript frameworks",
+      "Build reusable code and libraries for future use",
+      "Ensure the technical feasibility of UI/UX designs",
+      "Optimize applications for maximum speed and scalability",
+      "Collaborate with other team members and stakeholders",
+      "Maintain cross-browser compatibility"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field",
+      "Proficiency in HTML, CSS, and JavaScript",
+      "Experience with frameworks like React, Angular, or Vue.js",
+      "Understanding of responsive and adaptive design",
+      "Familiarity with RESTful APIs",
+      "Attention to detail and creative problem-solving skills",
+      "Good communication and teamwork abilities"
+    ],
+    "responsibilities_text": "Develop new user-facing features using modern JavaScript frameworks \u2022 Build reusable code and libraries for future use \u2022 Ensure the technical feasibility of UI/UX designs \u2022 Optimize applications for maximum speed and scalability \u2022 Collaborate with other team members and stakeholders \u2022 Maintain cross-browser compatibility",
+    "requirements_text": "Bachelor's degree in Computer Science or related field \u2022 Proficiency in HTML, CSS, and JavaScript \u2022 Experience with frameworks like React, Angular, or Vue.js \u2022 Understanding of responsive and adaptive design \u2022 Familiarity with RESTful APIs \u2022 Attention to detail and creative problem-solving skills \u2022 Good communication and teamwork abilities",
+    "full_text": "Frontend PixelWorks Studio We are looking for a creative Frontend Developer to implement visual elements and user interactions for our web applications. You will work closely with designers and backend developers to deliver engaging and responsive user experiences.  Develop new user-facing features using modern JavaScript frameworks Build reusable code and libraries for future use Ensure the technical feasibility of UI/UX designs Optimize applications for maximum speed and scalability Collaborate with other team members and stakeholders Maintain cross-browser compatibility Bachelor's degree in Computer Science or related field Proficiency in HTML, CSS, and JavaScript Experience with frameworks like React, Angular, or Vue.js Understanding of responsive and adaptive design Familiarity with RESTful APIs Attention to detail and creative problem-solving skills Good communication and teamwork abilities",
+    "filename": "frontend.txt"
+  },
+  "fullstack.txt": {
+    "job_title": "Fullstack",
+    "company": "Innovatech Solutions",
+    "description": "We are looking for a skilled Full Stack Developer to build and maintain web applications from front-end to back-end. You will work closely with designers and other developers to deliver seamless user experiences and robust server-side logic.",
+    "responsibilities": [
+      "Develop and maintain both client-side and server-side components",
+      "Design and implement APIs and web services",
+      "Collaborate with UI/UX designers to create responsive interfaces",
+      "Optimize applications for speed and scalability",
+      "Write clean, well-documented code",
+      "Troubleshoot and debug issues across the stack"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field",
+      "Proficiency in JavaScript, HTML, CSS, and at least one backend language (Node.js, Python, Java, etc.)",
+      "Experience with front-end frameworks (React, Angular, Vue)",
+      "Experience with backend frameworks (Express, Django, Spring)",
+      "Familiarity with databases (MongoDB, MySQL, PostgreSQL)",
+      "Understanding of RESTful APIs and web security",
+      "Strong problem-solving skills and attention to detail"
+    ],
+    "responsibilities_text": "Develop and maintain both client-side and server-side components \u2022 Design and implement APIs and web services \u2022 Collaborate with UI/UX designers to create responsive interfaces \u2022 Optimize applications for speed and scalability \u2022 Write clean, well-documented code \u2022 Troubleshoot and debug issues across the stack",
+    "requirements_text": "Bachelor's degree in Computer Science or related field \u2022 Proficiency in JavaScript, HTML, CSS, and at least one backend language (Node.js, Python, Java, etc.) \u2022 Experience with front-end frameworks (React, Angular, Vue) \u2022 Experience with backend frameworks (Express, Django, Spring) \u2022 Familiarity with databases (MongoDB, MySQL, PostgreSQL) \u2022 Understanding of RESTful APIs and web security \u2022 Strong problem-solving skills and attention to detail",
+    "full_text": "Fullstack Innovatech Solutions We are looking for a skilled Full Stack Developer to build and maintain web applications from front-end to back-end. You will work closely with designers and other developers to deliver seamless user experiences and robust server-side logic.  Develop and maintain both client-side and server-side components Design and implement APIs and web services Collaborate with UI/UX designers to create responsive interfaces Optimize applications for speed and scalability Write clean, well-documented code Troubleshoot and debug issues across the stack Bachelor's degree in Computer Science or related field Proficiency in JavaScript, HTML, CSS, and at least one backend language (Node.js, Python, Java, etc.) Experience with front-end frameworks (React, Angular, Vue) Experience with backend frameworks (Express, Django, Spring) Familiarity with databases (MongoDB, MySQL, PostgreSQL) Understanding of RESTful APIs and web security Strong problem-solving skills and attention to detail",
+    "filename": "fullstack.txt"
+  },
+  "it_support_specialist.txt": {
+    "job_title": "It Support Specialist",
+    "company": "TechAssist Solutions",
+    "description": "We are seeking an IT Support Specialist to provide technical support and assistance to internal staff. You will help install, upgrade, and troubleshoot hardware and software systems.",
+    "responsibilities": [
+      "Install and configure computer hardware, software, and networks",
+      "Monitor and maintain computer systems and networks",
+      "Respond to service issues and requests",
+      "Provide technical support across the company",
+      "Document issues and solutions"
+    ],
+    "requirements": [
+      "Bachelor's degree in Information Technology or related field",
+      "Basic knowledge of computer hardware, software, and networks",
+      "Problem-solving skills and attention to detail",
+      "Good communication and interpersonal skills",
+      "Willingness to learn and grow"
+    ],
+    "responsibilities_text": "Install and configure computer hardware, software, and networks \u2022 Monitor and maintain computer systems and networks \u2022 Respond to service issues and requests \u2022 Provide technical support across the company \u2022 Document issues and solutions",
+    "requirements_text": "Bachelor's degree in Information Technology or related field \u2022 Basic knowledge of computer hardware, software, and networks \u2022 Problem-solving skills and attention to detail \u2022 Good communication and interpersonal skills \u2022 Willingness to learn and grow",
+    "full_text": "It Support Specialist TechAssist Solutions We are seeking an IT Support Specialist to provide technical support and assistance to internal staff. You will help install, upgrade, and troubleshoot hardware and software systems.  Install and configure computer hardware, software, and networks Monitor and maintain computer systems and networks Respond to service issues and requests Provide technical support across the company Document issues and solutions Bachelor's degree in Information Technology or related field Basic knowledge of computer hardware, software, and networks Problem-solving skills and attention to detail Good communication and interpersonal skills Willingness to learn and grow",
+    "filename": "it_support_specialist.txt"
+  },
+  "junior_software_engineer.txt": {
+    "job_title": "Junior Software Engineer",
+    "company": "NextGen Solutions",
+    "description": "We are looking for a motivated Junior Software Engineer to join our development team. You will assist in designing, coding, and testing software applications under the guidance of senior engineers.",
+    "responsibilities": [
+      "Assist in the development and maintenance of software applications",
+      "Write clean, efficient, and well-documented code",
+      "Participate in code reviews and team meetings",
+      "Debug and troubleshoot software issues",
+      "Collaborate with cross-functional teams",
+      "Learn and apply new technologies as needed"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science, IT, or related field",
+      "Familiarity with at least one programming language (Python, Java, C++, etc.)",
+      "Understanding of software development fundamentals",
+      "Eagerness to learn and grow in a team environment",
+      "Good problem-solving and communication skills"
+    ],
+    "responsibilities_text": "Assist in the development and maintenance of software applications \u2022 Write clean, efficient, and well-documented code \u2022 Participate in code reviews and team meetings \u2022 Debug and troubleshoot software issues \u2022 Collaborate with cross-functional teams \u2022 Learn and apply new technologies as needed",
+    "requirements_text": "Bachelor's degree in Computer Science, IT, or related field \u2022 Familiarity with at least one programming language (Python, Java, C++, etc.) \u2022 Understanding of software development fundamentals \u2022 Eagerness to learn and grow in a team environment \u2022 Good problem-solving and communication skills",
+    "full_text": "Junior Software Engineer NextGen Solutions We are looking for a motivated Junior Software Engineer to join our development team. You will assist in designing, coding, and testing software applications under the guidance of senior engineers.  Assist in the development and maintenance of software applications Write clean, efficient, and well-documented code Participate in code reviews and team meetings Debug and troubleshoot software issues Collaborate with cross-functional teams Learn and apply new technologies as needed Bachelor's degree in Computer Science, IT, or related field Familiarity with at least one programming language (Python, Java, C++, etc.) Understanding of software development fundamentals Eagerness to learn and grow in a team environment Good problem-solving and communication skills",
+    "filename": "junior_software_engineer.txt"
+  },
+  "junior_ui_ux_designer.txt": {
+    "job_title": "Junior Ui Ux Designer",
+    "company": "Creative Minds Studio",
+    "description": "We are seeking a Junior UI/UX Designer to help design user interfaces and improve user experiences for our digital products. You will work closely with senior designers and developers.",
+    "responsibilities": [
+      "Assist in designing wireframes, mockups, and prototypes",
+      "Conduct user research and usability testing",
+      "Collaborate with developers to implement designs",
+      "Maintain design consistency and brand guidelines",
+      "Learn and apply UI/UX best practices"
+    ],
+    "requirements": [
+      "Bachelor's degree in Design, Computer Science, or related field (or pursuing)",
+      "Basic knowledge of design tools (Figma, Adobe XD, Sketch)",
+      "Creative thinking and attention to detail",
+      "Good communication and teamwork skills",
+      "Eagerness to learn and grow"
+    ],
+    "responsibilities_text": "Assist in designing wireframes, mockups, and prototypes \u2022 Conduct user research and usability testing \u2022 Collaborate with developers to implement designs \u2022 Maintain design consistency and brand guidelines \u2022 Learn and apply UI/UX best practices",
+    "requirements_text": "Bachelor's degree in Design, Computer Science, or related field (or pursuing) \u2022 Basic knowledge of design tools (Figma, Adobe XD, Sketch) \u2022 Creative thinking and attention to detail \u2022 Good communication and teamwork skills \u2022 Eagerness to learn and grow",
+    "full_text": "Junior Ui Ux Designer Creative Minds Studio We are seeking a Junior UI/UX Designer to help design user interfaces and improve user experiences for our digital products. You will work closely with senior designers and developers.  Assist in designing wireframes, mockups, and prototypes Conduct user research and usability testing Collaborate with developers to implement designs Maintain design consistency and brand guidelines Learn and apply UI/UX best practices Bachelor's degree in Design, Computer Science, or related field (or pursuing) Basic knowledge of design tools (Figma, Adobe XD, Sketch) Creative thinking and attention to detail Good communication and teamwork skills Eagerness to learn and grow",
+    "filename": "junior_ui_ux_designer.txt"
+  },
+  "junior_web_developer.txt": {
+    "job_title": "Junior Web Developer",
+    "company": "WebWorks Digital",
+    "description": "We are looking for a Junior Web Developer to assist in building and maintaining websites and web applications. You will work under the guidance of senior developers and gain hands-on experience in web technologies.",
+    "responsibilities": [
+      "Assist in developing and maintaining websites",
+      "Write HTML, CSS, and JavaScript code",
+      "Test and debug web applications",
+      "Collaborate with designers and developers",
+      "Learn and apply new web technologies"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field",
+      "Basic knowledge of HTML, CSS, and JavaScript",
+      "Eagerness to learn and grow in a team environment",
+      "Good problem-solving and communication skills"
+    ],
+    "responsibilities_text": "Assist in developing and maintaining websites \u2022 Write HTML, CSS, and JavaScript code \u2022 Test and debug web applications \u2022 Collaborate with designers and developers \u2022 Learn and apply new web technologies",
+    "requirements_text": "Bachelor's degree in Computer Science or related field \u2022 Basic knowledge of HTML, CSS, and JavaScript \u2022 Eagerness to learn and grow in a team environment \u2022 Good problem-solving and communication skills",
+    "full_text": "Junior Web Developer WebWorks Digital We are looking for a Junior Web Developer to assist in building and maintaining websites and web applications. You will work under the guidance of senior developers and gain hands-on experience in web technologies.  Assist in developing and maintaining websites Write HTML, CSS, and JavaScript code Test and debug web applications Collaborate with designers and developers Learn and apply new web technologies Bachelor's degree in Computer Science or related field Basic knowledge of HTML, CSS, and JavaScript Eagerness to learn and grow in a team environment Good problem-solving and communication skills",
+    "filename": "junior_web_developer.txt"
+  },
+  "ml_engineer.txt": {
+    "job_title": "Ml Engineer",
+    "company": "AI Innovations Lab",
+    "description": "We are looking for a Machine Learning Engineer to design, develop, and deploy machine learning models into production. You will collaborate with data scientists and software engineers to build scalable ML solutions.",
+    "responsibilities": [
+      "Design and implement machine learning algorithms and models",
+      "Deploy and monitor models in production environments",
+      "Build and maintain data pipelines and infrastructure",
+      "Optimize model performance and scalability",
+      "Collaborate with cross-functional teams",
+      "Document processes and results"
+    ],
+    "requirements": [
+      "Bachelor's or Master's degree in Computer Science, Engineering, or related field",
+      "Proficiency in Python and ML frameworks (TensorFlow, PyTorch, Scikit-learn)",
+      "Experience with cloud platforms (AWS, GCP, Azure)",
+      "Knowledge of MLOps and model deployment",
+      "Strong programming and problem-solving skills",
+      "Familiarity with containerization (Docker, Kubernetes)"
+    ],
+    "responsibilities_text": "Design and implement machine learning algorithms and models \u2022 Deploy and monitor models in production environments \u2022 Build and maintain data pipelines and infrastructure \u2022 Optimize model performance and scalability \u2022 Collaborate with cross-functional teams \u2022 Document processes and results",
+    "requirements_text": "Bachelor's or Master's degree in Computer Science, Engineering, or related field \u2022 Proficiency in Python and ML frameworks (TensorFlow, PyTorch, Scikit-learn) \u2022 Experience with cloud platforms (AWS, GCP, Azure) \u2022 Knowledge of MLOps and model deployment \u2022 Strong programming and problem-solving skills \u2022 Familiarity with containerization (Docker, Kubernetes)",
+    "full_text": "Ml Engineer AI Innovations Lab We are looking for a Machine Learning Engineer to design, develop, and deploy machine learning models into production. You will collaborate with data scientists and software engineers to build scalable ML solutions.  Design and implement machine learning algorithms and models Deploy and monitor models in production environments Build and maintain data pipelines and infrastructure Optimize model performance and scalability Collaborate with cross-functional teams Document processes and results Bachelor's or Master's degree in Computer Science, Engineering, or related field Proficiency in Python and ML frameworks (TensorFlow, PyTorch, Scikit-learn) Experience with cloud platforms (AWS, GCP, Azure) Knowledge of MLOps and model deployment Strong programming and problem-solving skills Familiarity with containerization (Docker, Kubernetes)",
+    "filename": "ml_engineer.txt"
+  },
+  "product_management_intern.txt": {
+    "job_title": "Product Management Intern",
+    "company": "BrightIdeas Tech",
+    "description": "We are looking for a Product Management Intern to support our product team in researching, planning, and launching new features. This is an ideal role for someone interested in product strategy and user experience.",
+    "responsibilities": [
+      "Conduct market and user research",
+      "Assist in defining product requirements",
+      "Support product managers in project coordination",
+      "Help track product metrics and feedback",
+      "Prepare presentations and reports"
+    ],
+    "requirements": [
+      "Bachelor's degree in Business, Engineering, or related field (or pursuing)",
+      "Strong interest in product management and technology",
+      "Analytical and organizational skills",
+      "Good communication and teamwork abilities",
+      "Eagerness to learn and contribute"
+    ],
+    "responsibilities_text": "Conduct market and user research \u2022 Assist in defining product requirements \u2022 Support product managers in project coordination \u2022 Help track product metrics and feedback \u2022 Prepare presentations and reports",
+    "requirements_text": "Bachelor's degree in Business, Engineering, or related field (or pursuing) \u2022 Strong interest in product management and technology \u2022 Analytical and organizational skills \u2022 Good communication and teamwork abilities \u2022 Eagerness to learn and contribute",
+    "full_text": "Product Management Intern BrightIdeas Tech We are looking for a Product Management Intern to support our product team in researching, planning, and launching new features. This is an ideal role for someone interested in product strategy and user experience.  Conduct market and user research Assist in defining product requirements Support product managers in project coordination Help track product metrics and feedback Prepare presentations and reports Bachelor's degree in Business, Engineering, or related field (or pursuing) Strong interest in product management and technology Analytical and organizational skills Good communication and teamwork abilities Eagerness to learn and contribute",
+    "filename": "product_management_intern.txt"
+  },
+  "qa_engineer.txt": {
+    "job_title": "Qa Engineer",
+    "company": "QualityFirst Tech",
+    "description": "We are seeking an entry-level QA Engineer to help ensure the quality of our software products. You will be responsible for executing test cases, reporting bugs, and working closely with developers to resolve issues.",
+    "responsibilities": [
+      "Execute manual and automated test cases",
+      "Identify, document, and track software defects",
+      "Collaborate with developers to resolve issues",
+      "Participate in requirement and design reviews",
+      "Assist in creating test plans and documentation"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science, Engineering, or related field",
+      "Basic understanding of software testing concepts",
+      "Familiarity with testing tools is a plus",
+      "Attention to detail and analytical skills",
+      "Good communication and teamwork abilities"
+    ],
+    "responsibilities_text": "Execute manual and automated test cases \u2022 Identify, document, and track software defects \u2022 Collaborate with developers to resolve issues \u2022 Participate in requirement and design reviews \u2022 Assist in creating test plans and documentation",
+    "requirements_text": "Bachelor's degree in Computer Science, Engineering, or related field \u2022 Basic understanding of software testing concepts \u2022 Familiarity with testing tools is a plus \u2022 Attention to detail and analytical skills \u2022 Good communication and teamwork abilities",
+    "full_text": "Qa Engineer QualityFirst Tech We are seeking an entry-level QA Engineer to help ensure the quality of our software products. You will be responsible for executing test cases, reporting bugs, and working closely with developers to resolve issues.  Execute manual and automated test cases Identify, document, and track software defects Collaborate with developers to resolve issues Participate in requirement and design reviews Assist in creating test plans and documentation Bachelor's degree in Computer Science, Engineering, or related field Basic understanding of software testing concepts Familiarity with testing tools is a plus Attention to detail and analytical skills Good communication and teamwork abilities",
+    "filename": "qa_engineer.txt"
+  },
+  "sde.txt": {
+    "job_title": "Sde",
+    "company": "Example Tech Solutions",
+    "description": "We are seeking a talented Software Development Engineer to design, develop, and maintain scalable software solutions. You will work with cross-functional teams to deliver high-quality products and features, participate in code reviews, and contribute to architectural decisions.",
+    "responsibilities": [
+      "Design, develop, test, and deploy software applications",
+      "Collaborate with product managers, designers, and other engineers",
+      "Write clean, maintainable, and efficient code",
+      "Participate in code reviews and mentor junior developers",
+      "Troubleshoot, debug, and upgrade existing systems",
+      "Follow best practices in software engineering and agile methodologies"
+    ],
+    "requirements": [
+      "Bachelor's degree in Computer Science or related field",
+      "Proficiency in at least one programming language (Python, Java, C++, etc.)",
+      "Experience with web frameworks (Django, Flask, Spring, etc.)",
+      "Familiarity with databases (SQL, NoSQL)",
+      "Strong problem-solving and analytical skills",
+      "Knowledge of version control systems (Git)",
+      "Excellent communication and teamwork skills"
+    ],
+    "responsibilities_text": "Design, develop, test, and deploy software applications \u2022 Collaborate with product managers, designers, and other engineers \u2022 Write clean, maintainable, and efficient code \u2022 Participate in code reviews and mentor junior developers \u2022 Troubleshoot, debug, and upgrade existing systems \u2022 Follow best practices in software engineering and agile methodologies",
+    "requirements_text": "Bachelor's degree in Computer Science or related field \u2022 Proficiency in at least one programming language (Python, Java, C++, etc.) \u2022 Experience with web frameworks (Django, Flask, Spring, etc.) \u2022 Familiarity with databases (SQL, NoSQL) \u2022 Strong problem-solving and analytical skills \u2022 Knowledge of version control systems (Git) \u2022 Excellent communication and teamwork skills",
+    "full_text": "Sde Example Tech Solutions We are seeking a talented Software Development Engineer to design, develop, and maintain scalable software solutions. You will work with cross-functional teams to deliver high-quality products and features, participate in code reviews, and contribute to architectural decisions.  Design, develop, test, and deploy software applications Collaborate with product managers, designers, and other engineers Write clean, maintainable, and efficient code Participate in code reviews and mentor junior developers Troubleshoot, debug, and upgrade existing systems Follow best practices in software engineering and agile methodologies Bachelor's degree in Computer Science or related field Proficiency in at least one programming language (Python, Java, C++, etc.) Experience with web frameworks (Django, Flask, Spring, etc.) Familiarity with databases (SQL, NoSQL) Strong problem-solving and analytical skills Knowledge of version control systems (Git) Excellent communication and teamwork skills",
+    "filename": "sde.txt"
+  },
+  "technical_support_engineer.txt": {
+    "job_title": "Technical Support Engineer",
+    "company": "SupportPro Services",
+    "description": "We are looking for a Technical Support Engineer to provide technical assistance and support for incoming queries and issues related to computer systems, software, and hardware.",
+    "responsibilities": [
+      "Respond to customer queries via phone, email, or chat",
+      "Diagnose and resolve technical hardware and software issues",
+      "Follow up with customers to ensure issues are resolved",
+      "Document technical knowledge in the form of notes and manuals",
+      "Escalate unresolved issues to higher-level support"
+    ],
+    "requirements": [
+      "Bachelor's degree in IT, Computer Science, or related field",
+      "Basic understanding of computer systems and troubleshooting",
+      "Strong communication and customer service skills",
+      "Ability to work in shifts if required",
+      "Eagerness to learn and adapt"
+    ],
+    "responsibilities_text": "Respond to customer queries via phone, email, or chat \u2022 Diagnose and resolve technical hardware and software issues \u2022 Follow up with customers to ensure issues are resolved \u2022 Document technical knowledge in the form of notes and manuals \u2022 Escalate unresolved issues to higher-level support",
+    "requirements_text": "Bachelor's degree in IT, Computer Science, or related field \u2022 Basic understanding of computer systems and troubleshooting \u2022 Strong communication and customer service skills \u2022 Ability to work in shifts if required \u2022 Eagerness to learn and adapt",
+    "full_text": "Technical Support Engineer SupportPro Services We are looking for a Technical Support Engineer to provide technical assistance and support for incoming queries and issues related to computer systems, software, and hardware.  Respond to customer queries via phone, email, or chat Diagnose and resolve technical hardware and software issues Follow up with customers to ensure issues are resolved Document technical knowledge in the form of notes and manuals Escalate unresolved issues to higher-level support Bachelor's degree in IT, Computer Science, or related field Basic understanding of computer systems and troubleshooting Strong communication and customer service skills Ability to work in shifts if required Eagerness to learn and adapt",
+    "filename": "technical_support_engineer.txt"
+  }
+}

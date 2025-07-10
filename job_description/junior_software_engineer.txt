@@ -1,0 +1,21 @@
+Junior Software Engineer
+
+Company: NextGen Solutions
+
+Job Description:
+We are looking for a motivated Junior Software Engineer to join our development team. You will assist in designing, coding, and testing software applications under the guidance of senior engineers.
+
+Responsibilities:
+- Assist in the development and maintenance of software applications
+- Write clean, efficient, and well-documented code
+- Participate in code reviews and team meetings
+- Debug and troubleshoot software issues
+- Collaborate with cross-functional teams
+- Learn and apply new technologies as needed
+
+Requirements:
+- Bachelor's degree in Computer Science, IT, or related field
+- Familiarity with at least one programming language (Python, Java, C++, etc.)
+- Understanding of software development fundamentals
+- Eagerness to learn and grow in a team environment
+- Good problem-solving and communication skills 

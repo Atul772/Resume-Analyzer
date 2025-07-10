@@ -1,0 +1,23 @@
+Software Development Engineer (SDE)
+
+Company: Example Tech Solutions
+
+Job Description:
+We are seeking a talented Software Development Engineer to design, develop, and maintain scalable software solutions. You will work with cross-functional teams to deliver high-quality products and features, participate in code reviews, and contribute to architectural decisions.
+
+Responsibilities:
+- Design, develop, test, and deploy software applications
+- Collaborate with product managers, designers, and other engineers
+- Write clean, maintainable, and efficient code
+- Participate in code reviews and mentor junior developers
+- Troubleshoot, debug, and upgrade existing systems
+- Follow best practices in software engineering and agile methodologies
+
+Requirements:
+- Bachelor's degree in Computer Science or related field
+- Proficiency in at least one programming language (Python, Java, C++, etc.)
+- Experience with web frameworks (Django, Flask, Spring, etc.)
+- Familiarity with databases (SQL, NoSQL)
+- Strong problem-solving and analytical skills
+- Knowledge of version control systems (Git)
+- Excellent communication and teamwork skills

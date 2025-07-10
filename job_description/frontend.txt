@@ -1,0 +1,23 @@
+Frontend Developer
+
+Company: PixelWorks Studio
+
+Job Description:
+We are looking for a creative Frontend Developer to implement visual elements and user interactions for our web applications. You will work closely with designers and backend developers to deliver engaging and responsive user experiences.
+
+Responsibilities:
+- Develop new user-facing features using modern JavaScript frameworks
+- Build reusable code and libraries for future use
+- Ensure the technical feasibility of UI/UX designs
+- Optimize applications for maximum speed and scalability
+- Collaborate with other team members and stakeholders
+- Maintain cross-browser compatibility
+
+Requirements:
+- Bachelor's degree in Computer Science or related field
+- Proficiency in HTML, CSS, and JavaScript
+- Experience with frameworks like React, Angular, or Vue.js
+- Understanding of responsive and adaptive design
+- Familiarity with RESTful APIs
+- Attention to detail and creative problem-solving skills
+- Good communication and teamwork abilities
