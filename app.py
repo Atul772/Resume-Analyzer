@@ -15,7 +15,7 @@ import re
 st.set_page_config(
     page_title="Smart Career Coach", 
     layout="wide",
-    page_icon="🧠",
+    page_icon="📄",
     initial_sidebar_state="expanded"
 )
 
@@ -32,16 +32,31 @@ st.markdown("""
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .feature-box {
-        background: #f8f9fa;
+        background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
         padding: 1.5rem;
-        border-radius: 8px;
-        border-left: 4px solid #667eea;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        border-top: 4px solid #667eea;
         margin: 1rem 0;
-        transition: transform 0.2s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
     }
     .feature-box:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-top: 4px solid #764ba2;
+    }
+    .feature-box h4 {
+        color: #2d3748;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+    .feature-box p {
+        color: #4a5568;
+        font-size: 14px;
+        margin-bottom: 0;
+        line-height: 1.5;
     }
     .metric-card {
         background: white;
@@ -98,16 +113,16 @@ def main():
     """Main entry point for the Streamlit app."""
     st.markdown("""
     <div class="main-header">
-        <h1>🧠 Smart Career Coach</h1>
+        <h1>Smart Career Coach</h1>
         <p>AI-Powered Resume Analyzer & Job Role Recommender</p>
     </div>
     """, unsafe_allow_html=True)
     
     # Sidebar for navigation
-    st.sidebar.title("🚀 Navigation")
-    app_mode = st.sidebar.selectbox(
+    st.sidebar.title("Navigation")
+    app_mode = st.sidebar.radio(
         "Choose Mode:",
-        ["📄 Resume Analysis", "🔍 Job Matching", "🤖 AI Career Coach", "📊 Dashboard", "💾 Export Resume"]
+        ["Resume Analysis", "Job Matching", "AI Career Coach", "Dashboard"]
     )
     
     # Load components
@@ -120,7 +135,7 @@ def main():
     
     # Enhanced file upload with multiple formats
     uploaded_file = st.file_uploader(
-        "📤 Upload your resume",
+        "Upload your resume",
         type=["pdf", "docx", "txt"],
         help="Supported formats: PDF, DOCX, TXT"
     )
@@ -188,23 +203,23 @@ def main():
     raw_text = st.session_state.raw_text
     
     # Route to different modes
-    if app_mode == "📄 Resume Analysis":
+    if app_mode == "Resume Analysis":
         show_resume_analysis(parsed_info, raw_text)
-    elif app_mode == "🔍 Job Matching":
+    elif app_mode == "Job Matching":
         show_job_matching(parsed_info, raw_text, pinecone_handler)
-    elif app_mode == "🤖 AI Career Coach":
+    elif app_mode == "AI Career Coach":
         show_ai_coach(parsed_info, gemini_api)
-    elif app_mode == "📊 Dashboard":
+    elif app_mode == "Dashboard":
         show_dashboard(parsed_info, raw_text)
-    elif app_mode == "💾 Export Resume":
-        show_export_options(parsed_info, gemini_api)
+    # elif app_mode == "Export Resume":
+    #     show_export_options(parsed_info, gemini_api)
 
 def show_landing_page():
     """Enhanced landing page when no resume is uploaded."""
     # Hero section
     st.markdown("""
     <div style='text-align: center; padding: 2rem 0;'>
-        <h2>Welcome to Your AI-Powered Career Assistant! 🚀</h2>
+        <h2>Welcome to Your AI-Powered Career Assistant!</h2>
         <p style='font-size: 18px; color: #666;'>
             Upload your resume to unlock personalized career insights and opportunities
         </p>
@@ -215,33 +230,31 @@ def show_landing_page():
     col1, col2, col3, col4 = st.columns(4)
     
     features = [
-        ("📄", "Resume Analysis", "Extract and analyze all sections of your resume with advanced NLP"),
-        ("🔍", "Job Matching", "Find relevant opportunities using semantic search technology"),
-        ("🤖", "AI Coaching", "Get personalized feedback from Google's Gemini AI"),
-        ("📊", "Analytics", "Visualize your career profile with interactive dashboards")
+        ("Resume Analysis", "Extract and analyze all sections of your resume with advanced NLP"),
+        ("Job Matching", "Find relevant opportunities using semantic search technology"),
+        ("AI Coaching", "Get personalized feedback from Google's Gemini AI"),
+        ("Analytics", "Visualize your career profile with interactive dashboards")
     ]
     
-    for col, (icon, title, desc) in zip([col1, col2, col3, col4], features):
+    for col, (title, desc) in zip([col1, col2, col3, col4], features):
         with col:
             st.markdown(f"""
             <div class="feature-box" style="text-align: center;">
-                <h1>{icon}</h1>
                 <h4>{title}</h4>
-                <p style="font-size: 14px; color: #666;">{desc}</p>
+                <p>{desc}</p>
             </div>
             """, unsafe_allow_html=True)
     
     # How it works
-    st.markdown("### 🎯 How It Works")
+    st.markdown("### How It Works")
     steps = [
         "Upload your resume in PDF, DOCX, or TXT format",
         "AI extracts and analyzes all information",
         "Get matched with relevant job opportunities",
-        "Receive personalized improvement suggestions",
-        "Export your enhanced resume"
+        "Receive personalized improvement suggestions"
     ]
     
-    cols = st.columns(5)
+    cols = st.columns(4)
     for i, (col, step) in enumerate(zip(cols, steps)):
         with col:
             st.markdown(f"""
@@ -255,22 +268,22 @@ def show_landing_page():
 
 def show_resume_analysis(parsed_info, raw_text):
     """Enhanced resume analysis with contact info and new sections."""
-    st.header("📄 Resume Analysis Results")
+    st.header("Resume Analysis Results")
     
     # Contact Information
     if parsed_info.get("contact"):
-        st.markdown("### 👤 Contact Information")
+        st.markdown("### Contact Information")
         contact_html = "<div style='background: #f8f9fa; padding: 1rem; border-radius: 8px;'>"
         for key, value in parsed_info["contact"].items():
             if value:
                 icon = {
-                    "name": "👤",
-                    "email": "📧",
-                    "phone": "📱",
-                    "linkedin": "💼",
-                    "github": "💻"
+                    "name": "User:",
+                    "email": "Email:",
+                    "phone": "Phone:",
+                    "linkedin": "LinkedIn:",
+                    "github": "GitHub:"
                 }.get(key, "📌")
-                contact_html += f'<span class="contact-chip">{icon} {value}</span>'
+                contact_html += f'<span class="contact-chip"><strong>{icon}</strong> {value}</span> '
         contact_html += "</div>"
         st.markdown(contact_html, unsafe_allow_html=True)
         st.markdown("---")
@@ -278,28 +291,28 @@ def show_resume_analysis(parsed_info, raw_text):
     # Simplified Metrics overview
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.metric("🧠 Skills Found", len(parsed_info.get("skills", [])))
+        st.metric("Skills Found", len(parsed_info.get("skills", [])))
     with col2:
         sections_found = len([k for k, v in parsed_info.items() if v and k not in ['contact', 'skills', 'raw_text']])
-        st.metric("📄 Sections Found", sections_found)
+        st.metric("Sections Found", sections_found)
     with col3:
-        st.metric("📝 Word Count", len(raw_text.split()))
+        st.metric("Word Count", len(raw_text.split()))
     
     # Summary Section
     if "summary" in parsed_info and parsed_info["summary"]:
-        with st.expander("📝 Professional Summary", expanded=True):
+        with st.expander("Professional Summary", expanded=True):
             st.write(parsed_info["summary"])
     
     # Enhanced tabs for all sections
     tabs = st.tabs([
-        "🧠 Skills", 
-        "💼 Experience", 
-        "📁 Projects", 
-        "🎓 Education",
-        "📜 Certifications",
-        "🏆 Achievements",
-        "🌐 Languages",
-        "🎯 Interests"
+        "Skills", 
+        "Experience", 
+        "Projects", 
+        "Education",
+        "Certifications",
+        "Achievements",
+        "Languages",
+        "Interests"
     ])
     
     # Skills Tab
@@ -313,7 +326,7 @@ def show_resume_analysis(parsed_info, raw_text):
                     st.markdown(f"**{category}**")
                     skills_html = ""
                     for skill in skills:
-                        skills_html += f'<span class="skill-tag">{skill}</span>'
+                        skills_html += f'<span class="skill-tag">{skill}</span> '
                     st.markdown(skills_html, unsafe_allow_html=True)
                     st.write("")
         else:
@@ -410,7 +423,7 @@ def categorize_skills(skills):
 
 def show_job_matching(parsed_info, raw_text, pinecone_handler):
     """Enhanced job matching with skill gap analysis."""
-    st.header("🔍 Job Role Recommendations")
+    st.header("Job Role Recommendations")
     
     # Add filters
     col1, col2, col3 = st.columns(3)
@@ -539,7 +552,7 @@ def analyze_skill_gap(user_skills: list, job_requirements: str) -> dict:
 
 def show_ai_coach(parsed_info, gemini_api):
     """Enhanced AI coaching with more interactive features."""
-    st.header("🤖 AI Career Coach")
+    st.header("AI Career Coach")
     
     # Coach personality selector
     coach_style = st.selectbox(
@@ -722,7 +735,7 @@ def show_ai_coach(parsed_info, gemini_api):
 
 def show_dashboard(parsed_info, raw_text):
     """Enhanced analytics dashboard with more insights."""
-    st.header("📊 Resume Analytics Dashboard")
+    st.header("Resume Analytics Dashboard")
     
     # Calculate various scores
     from resume_scorer import ResumeScorer
@@ -856,7 +869,7 @@ def show_dashboard(parsed_info, raw_text):
 
 def show_export_options(parsed_info, gemini_api):
     """Export resume in various formats."""
-    st.header("💾 Export Your Resume")
+    st.header("Export Your Resume")
     
     st.markdown("### Choose Export Format")
     

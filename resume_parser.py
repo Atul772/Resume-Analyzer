@@ -15,12 +15,12 @@ except LookupError:
 
 # Enhanced skills database with variations
 SKILLS_DB = {
-    "programming": ["python", "java", "c++", "c#", "javascript", "typescript", "go", "rust", "scala", "kotlin"],
-    "web": ["html", "css", "react", "react.js", "angular", "vue", "node.js", "express", "flask", "django", "fastapi"],
-    "database": ["mysql", "postgresql", "mongodb", "redis", "sqlite", "oracle", "sql", "nosql"],
-    "tools": ["git", "github", "docker", "kubernetes", "jenkins", "aws", "azure", "gcp", "linux", "unix"],
-    "ml_ai": ["machine learning", "deep learning", "tensorflow", "pytorch", "scikit", "pandas", "numpy", "opencv"],
-    "other": ["agile", "scrum", "rest", "api", "microservices", "devops", "ci/cd", "testing", "automation"]
+    "programming": ["python", "java", "c++", "c#", "c", "javascript", "typescript", "go", "rust", "scala", "kotlin", "ruby", "php", "swift", "dart", "bash", "shell", "r", "perl", "objective-c", "matlab"],
+    "web": ["html", "css", "html5", "css3", "react", "react.js", "angular", "vue", "vue.js", "node.js", "express", "flask", "django", "fastapi", "spring", "spring boot", "next.js", "nuxt.js", "graphql", "jquery", "bootstrap", "tailwind", "tailwind css", "sass", "less"],
+    "database": ["mysql", "postgresql", "mongodb", "redis", "sqlite", "oracle", "sql", "nosql", "dynamodb", "elasticsearch", "cassandra", "mariadb", "firebase", "snowflake", "neo4j", "supabase", "pinecone", "pinecone-db"],
+    "tools": ["git", "github", "gitlab", "bitbucket", "docker", "kubernetes", "jenkins", "aws", "azure", "gcp", "linux", "unix", "terraform", "ansible", "jira", "confluence", "webpack", "npm", "yarn", "postman", "figma", "vs code", "vscode"],
+    "ml_ai": ["machine learning", "deep learning", "tensorflow", "pytorch", "scikit-learn", "scikit", "pandas", "numpy", "opencv", "nlp", "llm", "llms", "huggingface", "keras", "xgboost", "matplotlib", "seaborn", "nltk", "spacy", "generative ai", "data analysis", "langchain", "gradio", "rag"],
+    "other": ["agile", "scrum", "rest", "api", "microservices", "devops", "ci/cd", "testing", "automation", "system design", "data structures", "algorithms", "problem solving", "ui/ux", "project management", "kanban", "communication", "teamwork", "leadership"]
 }
 
 # Flatten skills for easy lookup
@@ -196,7 +196,7 @@ class ResumeParser:
         
         return sections_content
 
-    def extract_skills(self, section_text: str) -> list:
+    def extract_skills(self, section_text: str, is_skills_section: bool = False) -> list:
         """Extract skills from skills section text."""
         if not section_text:
             return []
@@ -208,6 +208,27 @@ class ResumeParser:
         for skill in ALL_SKILLS:
             if re.search(r'\b' + re.escape(skill) + r'\b', text_lower):
                 skills.add(skill.title())
+                
+        # If this is specifically from a skills section, try to extract custom skills
+        # by splitting on common delimiters (commas, bullets, pipes, newlines)
+        if is_skills_section:
+            lines = section_text.split('\n')
+            for line in lines:
+                # Remove leading bullets, dashes, asterisks
+                cleaned_line = re.sub(r'^[\s•\-\*]+', '', line).strip()
+                if not cleaned_line:
+                    continue
+                # Split by commas, pipes, bullets, or colons
+                parts = re.split(r'[,|•:]', cleaned_line)
+                for part in parts:
+                    part = part.strip()
+                    # Filter out category names often followed by colons if they accidentally sneak through
+                    if part.lower() in ['programming languages', 'problem solving', 'tools & frameworks', 'web development', 'data science & ml', 'databases & os', 'technical skills']:
+                        continue
+                    # Filter out anything that's too long to be a single skill or too short
+                    if 1 < len(part) <= 35:
+                        part = re.sub(r'[.:;]$', '', part).strip()
+                        skills.add(part.title())
         
         return sorted(list(skills))
 
@@ -227,10 +248,10 @@ class ResumeParser:
         # The new logic returns raw text for each section.
         # We will also parse the skills section specifically for use in other parts of the app.
         if 'skills' in sections:
-            skills_list = self.extract_skills(sections['skills'])
+            skills_list = self.extract_skills(sections['skills'], is_skills_section=True)
         else:
             # If no skills section, try to find skills in the whole text
-            skills_list = self.extract_skills(text)
+            skills_list = self.extract_skills(text, is_skills_section=False)
 
         parsed_data = {
             'contact': contact_info,

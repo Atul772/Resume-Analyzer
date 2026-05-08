@@ -25,7 +25,7 @@ class GeminiAPI:
             raise ValueError("GEMINI_API_KEY not found in environment variables.")
         genai.configure(api_key=api_key)
         if GeminiAPI._model is None:
-            GeminiAPI._model = genai.GenerativeModel('gemini-2.0-flash')
+            GeminiAPI._model = genai.GenerativeModel('gemini-2.5-flash')
         self.model = GeminiAPI._model
         
         # Define coaching styles
@@ -62,25 +62,6 @@ class GeminiAPI:
         certifications = resume_data.get("certifications", [])
         summary = resume_data.get("summary", "No summary provided")
         contact = resume_data.get("contact", {})
-        
-        # Format experience
-        exp_summary = []
-        for exp in experience:
-            if isinstance(exp, dict):
-                exp_summary.append(
-                    f"- {exp.get('job_title', 'N/A')} at {exp.get('company', 'N/A')} "
-                    f"({exp.get('dates', 'N/A')}): {exp.get('description', 'No description')[:100]}..."
-                )
-            elif isinstance(exp, str):
-                exp_summary.append(f"- {exp}")
-
-        # Handle education, projects, certifications as lists of dicts
-        def join_names(items, max_items=None):
-            if not items:
-                return 'None listed'
-            if max_items:
-                items = items[:max_items]
-            return '; '.join([i.get('name', str(i)) if isinstance(i, dict) else str(i) for i in items])
 
         # Prepare unicode status for contact info
         email_status = "✓" if contact.get('email') else "✗"
@@ -105,16 +86,16 @@ class GeminiAPI:
         {skills}
         
         Experience ({len(experience)} positions):
-        {chr(10).join(exp_summary[:5])}  # Show first 5
+        {experience}  # Show first 5
         
         Education ({len(education)} entries):
-        {join_names(education, 3)}
+        {education}
         
         Projects ({len(projects)} projects):
-        {join_names(projects, 3)}
+        {projects}
         
         Certifications ({len(certifications)} certifications):
-        {join_names(certifications, 3)}
+        {certifications}
 
         Please provide a comprehensive analysis with:
         
@@ -428,8 +409,10 @@ class GeminiAPI:
             return str(summary)
         elif section == "skills":
             return ", ".join(resume_data.get("skills", []))
-        elif section == "experience":
+        elif section in ["experience", "experience descriptions"]:
             exp_list = resume_data.get("experience", [])
+            if isinstance(exp_list, str):
+                return exp_list
             lines = []
             for exp in exp_list:
                 if isinstance(exp, dict):
@@ -437,6 +420,8 @@ class GeminiAPI:
                 else:
                     lines.append(str(exp))
             return "\n".join(lines)
+        elif section == "full resume":
+            return resume_data.get("raw_text", "No raw resume text available.")
         elif section == "education":
             return join_names(resume_data.get("education", []))
         elif section == "projects":

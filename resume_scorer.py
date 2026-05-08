@@ -45,55 +45,93 @@ class ResumeScorer:
         # Experience score
         experience = parsed_info.get("experience", [])
         exp_score = 0
-        for i, exp in enumerate(experience):
-            if isinstance(exp, dict):
-                # Base points for having experience
-                exp_score += 20
-                
-                # Additional points for completeness
-                if exp.get("job_title") and exp["job_title"] != "Not specified": 
-                    exp_score += 5
-                if exp.get("company") and exp["company"] != "Not specified": 
-                    exp_score += 5
-                if exp.get("dates") and exp["dates"] != "Not specified": 
-                    exp_score += 5
-                if exp.get("description") and exp["description"] != "No description provided":
-                    # Check description quality
-                    desc_length = len(exp["description"].split())
-                    if desc_length > 30:
-                        exp_score += 10
-                    else:
-                        exp_score += 5
-                
-                # Diminishing returns for too many experiences
-                if i >= 5:
-                    exp_score = exp_score * 0.9
         
+        # Determine if it's a string (raw text) or list of dicts (structured data)
+        if isinstance(experience, str):
+            if not experience.strip():
+                exp_score = 0
+            else:
+                # Estimate based on length and newlines indicating separate entries
+                lines = [line for line in experience.split('\n') if line.strip()]
+                # Base score for having experience text
+                exp_score += 40
+                
+                # Check for dates (e.g. 2019-2021, Present, etc.) indicates structure
+                import re
+                if re.search(r'\b(201\d|202\d|199\d)\b', experience) or 'Present' in experience:
+                    exp_score += 20
+                
+                # Length and details bonus
+                words = len(experience.split())
+                if words > 100:
+                    exp_score += 40
+                elif words > 50:
+                    exp_score += 20
+        else:
+            # Handle list of dicts format
+            for i, exp in enumerate(experience):
+                if isinstance(exp, dict):
+                    # Base points for having experience
+                    exp_score += 20
+                    
+                    # Additional points for completeness
+                    if exp.get("job_title") and exp["job_title"] != "Not specified": 
+                        exp_score += 5
+                    if exp.get("company") and exp["company"] != "Not specified": 
+                        exp_score += 5
+                    if exp.get("dates") and exp["dates"] != "Not specified": 
+                        exp_score += 5
+                    if exp.get("description") and exp["description"] != "No description provided":
+                        # Check description quality
+                        desc_length = len(exp["description"].split())
+                        if desc_length > 30:
+                            exp_score += 10
+                        else:
+                            exp_score += 5
+                    
+                    # Diminishing returns for too many experiences
+                    if i >= 5:
+                        exp_score = exp_score * 0.9
+
         section_scores["experience"] = min(100, exp_score)
         
+        def _get_item_count(section_data):
+            if isinstance(section_data, list):
+                return len(section_data)
+            elif isinstance(section_data, str):
+                # Count non-empty lines starting with bullet points or dashes
+                bullets = len([l for l in section_data.split('\n') if l.strip().startswith(('-', '•', '*'))])
+                # Provide a reasonable estimation based on lines if no bullets
+                lines = len([l for l in section_data.split('\n') if len(l.strip()) > 5])
+                return max(bullets, max(1, lines // 3) if lines > 0 else 0)
+            return 0
+
         # Education score
-        education_count = len(parsed_info.get("education", []))
+        education_data = parsed_info.get("education", [])
+        education_count = _get_item_count(education_data)
         min_edu, max_edu = self.ideal_counts["education"]
-        if education_count == 0:
+        if not education_data:
             section_scores["education"] = 0
         elif education_count < min_edu:
             section_scores["education"] = 60
         else:
             section_scores["education"] = min(100, 60 + (education_count * 20))
         
-                # Projects score
-        projects_count = len(parsed_info.get("projects", []))
+        # Projects score
+        projects_data = parsed_info.get("projects", [])
+        projects_count = _get_item_count(projects_data)
         min_proj, max_proj = self.ideal_counts["projects"]
-        if projects_count == 0:
+        if not projects_data:
             section_scores["projects"] = 0
         elif projects_count < min_proj:
-            section_scores["projects"] = projects_count * 30
+            section_scores["projects"] = 60
         else:
-            section_scores["projects"] = min(100, 60 + (projects_count - min_proj) * 20)
+            section_scores["projects"] = min(100, 60 + (projects_count * 15))
         
         # Certifications score
-        cert_count = len(parsed_info.get("certifications", []))
-        if cert_count == 0:
+        cert_data = parsed_info.get("certifications", [])
+        cert_count = _get_item_count(cert_data)
+        if not cert_data:
             section_scores["certifications"] = 0
         else:
             section_scores["certifications"] = min(100, cert_count * 33.33)
