@@ -15,7 +15,6 @@ import re
 st.set_page_config(
     page_title="Smart Career Coach", 
     layout="wide",
-    page_icon="📄",
     initial_sidebar_state="expanded"
 )
 
@@ -147,12 +146,12 @@ def main():
             "FileType": uploaded_file.type,
             "FileSize": f"{uploaded_file.size / 1024:.2f} KB"
         }
-        st.sidebar.write("📁 **File Details:**")
+        st.sidebar.write("**File Details:**")
         for key, value in file_details.items():
             st.sidebar.write(f"- {key}: {value}")
 
         try:
-            with st.spinner("🔍 Analyzing your resume..."):
+            with st.spinner("Analyzing your resume..."):
                 parser = ResumeParser()
                 
                 # Extract text based on file type using the uploaded file object directly
@@ -244,7 +243,7 @@ def show_landing_page():
                 <p>{desc}</p>
             </div>
             """, unsafe_allow_html=True)
-    
+
     # How it works
     st.markdown("### How It Works")
     steps = [
@@ -253,7 +252,7 @@ def show_landing_page():
         "Get matched with relevant job opportunities",
         "Receive personalized improvement suggestions"
     ]
-    
+
     cols = st.columns(4)
     for i, (col, step) in enumerate(zip(cols, steps)):
         with col:
@@ -282,7 +281,7 @@ def show_resume_analysis(parsed_info, raw_text):
                     "phone": "Phone:",
                     "linkedin": "LinkedIn:",
                     "github": "GitHub:"
-                }.get(key, "📌")
+                }.get(key, "")
                 contact_html += f'<span class="contact-chip"><strong>{icon}</strong> {value}</span> '
         contact_html += "</div>"
         st.markdown(contact_html, unsafe_allow_html=True)
@@ -492,15 +491,15 @@ def show_job_matching(parsed_info, raw_text, pinecone_handler):
                             
                             # Match level indicator
                             if job['score'] >= 80:
-                                st.success("🟢 Excellent Match!")
+                                st.success("Excellent Match!")
                             elif job['score'] >= 65:
-                                st.info("🟡 Good Match")
+                                st.info("Good Match")
                             else:
-                                st.warning("🟠 Fair Match")
+                                st.warning("Fair Match")
                         
                         # Skill gap details
                         if skill_gap['missing_skills']:
-                            st.markdown("**🎯 Skills to Develop:**")
+                            st.markdown("**Skills to Develop:**")
                             missing_html = ""
                             for skill in skill_gap['missing_skills'][:5]:  # Show top 5
                                 missing_html += f'<span style="background: #ffebee; color: #c62828; padding: 4px 8px; margin: 2px; border-radius: 4px; font-size: 12px;">{skill}</span>'
@@ -509,10 +508,10 @@ def show_job_matching(parsed_info, raw_text, pinecone_handler):
                         # Apply button
                         col1, col2, col3 = st.columns([1, 1, 2])
                         with col1:
-                            if st.button(f"💼 Apply", key=f"apply_{i}"):
+                            if st.button(f"Apply", key=f"apply_{i}"):
                                 st.success("Application link would open here!")
                         with col2:
-                            if st.button(f"💾 Save", key=f"save_{i}"):
+                            if st.button(f"Save", key=f"save_{i}"):
                                 st.success("Job saved to your profile!")
             else:
                 st.warning(f"No jobs found with match score above {match_threshold}%. Try lowering the threshold.")
@@ -563,22 +562,22 @@ def show_ai_coach(parsed_info, gemini_api):
     
     # Create tabs for different coaching aspects
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "📋 Resume Review", 
-        "🎯 Career Path", 
-        "💡 Improvement Tips",
-        "🎨 Resume Rewrite",
-        "❓ Ask Coach"
+        "Resume Review", 
+        "Career Path", 
+        "Improvement Tips",
+        "Resume Rewrite",
+        "Ask Coach"
     ])
     
     with tab1:
-        st.markdown("### 📋 Comprehensive Resume Review")
-        if st.button("🔍 Analyze My Resume", type="primary"):
+        st.markdown("### Comprehensive Resume Review")
+        if st.button("Analyze My Resume", type="primary"):
             with st.spinner("AI is conducting detailed analysis..."):
                 analysis = gemini_api.analyze_resume(parsed_info, style=coach_style)
             
             if analysis["success"]:
                 # Display analysis in structured format
-                st.markdown("### 📊 Analysis Results")
+                st.markdown("### Analysis Results")
                 
                 # Parse the response to extract sections
                 response_text = analysis["text"]
@@ -592,7 +591,7 @@ def show_ai_coach(parsed_info, gemini_api):
                 st.error(f"Analysis failed: {analysis['error']}")
     
         with tab2:
-            st.markdown("### 🎯 Career Path Recommendations")
+            st.markdown("### Career Path Recommendations")
             
             col1, col2 = st.columns(2)
             with col1:
@@ -604,7 +603,7 @@ def show_ai_coach(parsed_info, gemini_api):
                 career_goal = st.text_input("Your Career Goal (optional)", 
                                         placeholder="e.g., Data Scientist, ML Engineer")
             
-            if st.button("🚀 Get Career Recommendations", type="primary"):
+            if st.button("Get Career Recommendations", type="primary"):
                 with st.spinner("AI is mapping your career path..."):
                     enhanced_info = {
                         **parsed_info,
@@ -614,30 +613,30 @@ def show_ai_coach(parsed_info, gemini_api):
                     suggestions = gemini_api.suggest_job_roles(enhanced_info)
                 
                 if suggestions["success"]:
-                    st.markdown("### 🗺️ Your Career Roadmap")
+                    st.markdown("### Your Career Roadmap")
                     st.write(suggestions["text"])
                     
                     # Create a career progression visualization
                     if "recommended job roles" in suggestions["text"].lower():
-                        st.markdown("### 📈 Career Progression Timeline")
+                        st.markdown("### Career Progression Timeline")
                         create_career_timeline(experience_level)
                 else:
                     st.error(f"Recommendations failed: {suggestions['error']}")
         
     with tab3:
-        st.markdown("### 💡 Personalized Improvement Tips")
+        st.markdown("### Personalized Improvement Tips")
         
         tip_category = st.selectbox(
             "Select Focus Area",
             ["Overall Resume", "Skills Section", "Experience Section", "ATS Optimization", "Industry-Specific"]
         )
         
-        if st.button("💡 Get Improvement Tips", type="primary"):
+        if st.button("Get Improvement Tips", type="primary"):
             with st.spinner("AI is generating personalized tips..."):
                 tips = gemini_api.generate_resume_tips(parsed_info, focus_area=tip_category)
             
             if tips["success"]:
-                st.markdown("### 📝 Actionable Improvements")
+                st.markdown("### Actionable Improvements")
                 
                 # Display tips in a nice format
                 tips_text = tips["text"]
@@ -645,12 +644,12 @@ def show_ai_coach(parsed_info, gemini_api):
                 
                 for tip in tips_list:
                     if tip.strip() and any(char.isdigit() for char in tip[:3]):
-                        st.markdown(f"✅ {tip.strip()}")
+                        st.markdown(f"{tip.strip()}")
             else:
                 st.error(f"Tips generation failed: {tips['error']}")
     
     with tab4:
-        st.markdown("### 🎨 AI-Powered Resume Rewrite")
+        st.markdown("### AI-Powered Resume Rewrite")
         st.info("Let AI help you rewrite sections of your resume for maximum impact!")
         
         section_to_rewrite = st.selectbox(
@@ -664,7 +663,7 @@ def show_ai_coach(parsed_info, gemini_api):
             value="Balanced"
         )
         
-        if st.button("✨ Rewrite Section", type="primary"):
+        if st.button("Rewrite Section", type="primary"):
             with st.spinner(f"AI is rewriting your {section_to_rewrite.lower()}..."):
                 rewritten = gemini_api.rewrite_section(
                     parsed_info, 
@@ -673,7 +672,7 @@ def show_ai_coach(parsed_info, gemini_api):
                 )
             
             if rewritten["success"]:
-                st.markdown("### 📝 Enhanced Version")
+                st.markdown("### Enhanced Version")
                 st.success("Here's your professionally rewritten content:")
                 
                 # Show before/after comparison
@@ -687,13 +686,13 @@ def show_ai_coach(parsed_info, gemini_api):
                     st.markdown("**Enhanced:**")
                     st.text_area("", rewritten["text"], height=200, key="enhanced")
                 
-                if st.button("📋 Copy Enhanced Version"):
+                if st.button("Copy Enhanced Version"):
                     st.success("Copied to clipboard! (Feature requires additional JS)")
             else:
                 st.error(f"Rewrite failed: {rewritten['error']}")
     
     with tab5:
-        st.markdown("### ❓ Ask Your AI Career Coach")
+        st.markdown("### Ask Your AI Career Coach")
         st.write("Have specific questions? Ask your AI coach anything about your career!")
         
         # Conversation history
@@ -709,7 +708,7 @@ def show_ai_coach(parsed_info, gemini_api):
         
         col1, col2 = st.columns([4, 1])
         with col2:
-            if st.button("🔍 Ask", type="primary"):
+            if st.button("Ask", type="primary"):
                 if user_question:
                     with st.spinner("Coach is thinking..."):
                         response = gemini_api.answer_career_question(
@@ -727,7 +726,7 @@ def show_ai_coach(parsed_info, gemini_api):
         
         # Display chat history
         if st.session_state.chat_history:
-            st.markdown("### 💬 Conversation History")
+            st.markdown("### Conversation History")
             for i, chat in enumerate(reversed(st.session_state.chat_history[-5:])):  # Show last 5
                 with st.expander(f"Q: {chat['question'][:50]}...", expanded=(i==0)):
                     st.markdown(f"**You asked:** {chat['question']}")
@@ -767,22 +766,22 @@ def show_dashboard(parsed_info, raw_text):
     
     with col2:
         ats_score = calculate_ats_compatibility(parsed_info, raw_text)
-        st.metric("🤖 ATS Score", f"{ats_score}%", 
+        st.metric("ATS Score", f"{ats_score}%", 
                   delta=f"+{ats_score-65}" if ats_score >= 65 else f"{ats_score-65}")
         st.progress(ats_score/100)
     
     with col3:
         word_count = len(raw_text.split())
-        optimal = "✅" if 300 <= word_count <= 800 else "⚠️"
-        st.metric("📝 Word Count", word_count, delta=f"{optimal} Optimal: 300-800")
+        optimal = "" if 300 <= word_count <= 800 else ""
+        st.metric("Word Count", word_count, delta=f"{optimal} Optimal: 300-800")
     
     with col4:
         keyword_density = calculate_keyword_density(parsed_info, raw_text)
-        st.metric("🔑 Keyword Density", f"{keyword_density:.1f}%", 
+        st.metric("Keyword Density", f"{keyword_density:.1f}%", 
                   delta="Good" if 2 <= keyword_density <= 5 else "Adjust")
     
     # Section Analysis
-    st.markdown("### 📊 Section Analysis")
+    st.markdown("### Section Analysis")
     
     # Create radar chart for section scores
     categories = list(section_scores.keys())
@@ -807,7 +806,7 @@ def show_dashboard(parsed_info, raw_text):
     st.plotly_chart(fig, use_container_width=True)
     
     # Detailed section breakdown
-    st.markdown("### 📋 Detailed Breakdown")
+    st.markdown("### Detailed Breakdown")
     
     for section, score in section_scores.items():
         col1, col2, col3 = st.columns([3, 1, 1])
@@ -824,7 +823,7 @@ def show_dashboard(parsed_info, raw_text):
                 st.error(f"{score}%")
     
     # Improvement Recommendations
-    st.markdown("### 🎯 Improvement Recommendations")
+    st.markdown("### Improvement Recommendations")
     recommendations = scorer.get_improvement_suggestions(section_scores)
     
     if recommendations:
@@ -834,7 +833,7 @@ def show_dashboard(parsed_info, raw_text):
         st.success("Your resume is well-optimized! Minor tweaks can still help.")
     
     # Industry Comparison
-    st.markdown("### 📊 Industry Comparison")
+    st.markdown("### Industry Comparison")
     
     # Mock industry average data
     industry_avg = {
@@ -878,7 +877,7 @@ def show_export_options(parsed_info, gemini_api):
     with col1:
         st.markdown("""
         <div class="feature-box">
-            <h4>📄 Enhanced PDF</h4>
+            <h4>Enhanced PDF</h4>
             <p>Professional PDF with improved formatting</p>
         </div>
         """, unsafe_allow_html=True)
@@ -891,7 +890,7 @@ def show_export_options(parsed_info, gemini_api):
     with col2:
         st.markdown("""
         <div class="feature-box">
-            <h4>📝 ATS-Optimized</h4>
+            <h4>ATS-Optimized</h4>
             <p>Plain text format optimized for ATS systems</p>
         </div>
         """, unsafe_allow_html=True)
@@ -908,7 +907,7 @@ def show_export_options(parsed_info, gemini_api):
     with col3:
         st.markdown("""
         <div class="feature-box">
-            <h4>💼 LinkedIn Ready</h4>
+            <h4>LinkedIn Ready</h4>
             <p>Formatted for LinkedIn profile sections</p>
         </div>
         """, unsafe_allow_html=True)
